@@ -1,8 +1,8 @@
 body {
   overflow: hidden;
   margin: 0;
-  height: 100%;
-  width: 100vw;
+  min-height: 100%;
+  min-width: 100%;
   @media  (max-width: 768px) {
    overflow: auto;               
   }
@@ -171,6 +171,9 @@ body {
   .slide-1 {
     z-index: 999;
     .video-background {
+      @media  (max-width: 768px) {
+
+      }
       .bg {
         z-index: -1;
         position: absolute;
@@ -596,7 +599,7 @@ body {
           z-index: 906;
           cursor: pointer;
           @media  (max-width: 768px) {
-            width: 80vw;
+            width: 100vw;
             margin: 0 10%;
     }
           img {
