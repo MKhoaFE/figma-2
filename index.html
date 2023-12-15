@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="home.css" />
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <div
+      class="header"
+      style="z-index: 1000"
+    >
+      <div class="logo">
+        <img
+          src="https://www.eurotile.vn/pictures/catalog/about/history8.png"
+          width="50%"
+          alt=""
+        />
+      </div>
+      <div class="nav">
+        <i href="#" class="text-white" style="font-size: 25px"></i>
+        <a href="#" class="">Tổng quan về Eurotile</a>
+        <a href="#" class="">Tin tức và Sự kiện</a>
+        <a href="#" class="">Sản phẩm</a>
+        <a href="#" class="">Thư viện</a>
+        <a href="#" class="">Liên hệ</a>
+        <a href="#" class="">TÌM NHANH</a>
+        <!-- <div class="border-start border-3 border-light h-50"></div> -->
+        <i class="bi bi-search text-white"></i>
+        <!-- <div class="border-end border-3 border-light h-50"></div> -->
+        <a href="#" class="item">EN</a>
+        <!-- <div class="border-end border-3 border-light h-50"></div> -->
+      </div>
+      <div class="nav-responsive">
+        <a href="#">TÌM NHANH</a>
+        <i class="bi bi-search"></i>
+        <div id="main">
+          <i class="bi bi-list" onclick="openNav()"></i>
+
+        </div>
+      </div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#"><i class="bi bi-house"></i></a>
+        <a href="#">TỔNG QUAN VỀ EUROTILE</a>
+        <a href="#">TIN TỨC VÀ SỰ KIỆN</a>
+        <a href="#">SẢN PHẨM</a>
+        <a href="#">THƯ VIỆN</a>
+        <a href="#">LIÊN HỆ</a>
+      </div>
+    </div>
+    <!-- nav slider -->
+    <div class="navbar position-absolute me-2">
+      <ul>
+        <div class="slide active">1</div>
+        <div class="slide">2</div>
+        <div class="slide">3</div>
+        <div class="slide">4</div>
+        <div class="slide">5</div>
+        <div class="slide">6</div>
+      </ul>
+    </div>
+    <!-- wrapper -->
+    <div class="wrapper-main d-block">
+      <div class="wrap-main">
+        <!-- Slide 1 -->
+        <div class="slide-1 mySlides position-relative">
+          <div
+            class="video position-relative embed-responsive embed-responsive-16by9"
+          >
+            <div id="vid-bg" class="video-background top-0 start-0 w-100 h-100">
+              <img
+                class="bg"
+                src="https://www.eurotile.vn/pictures/catalog/banner/001.jpg"
+                alt="Background Image"
+                style="object-fit: cover; width: 100%; height: 100%"
+              />
+              <i class="play-button bi bi-play-circle-fill" id="play"></i>
+            </div>
+            <iframe
+              id="myVideo"
+              class="embed-responsive-item min-vh-100 min-vw-100"
+              src="https://www.youtube.com/embed/And-D95JXhQ?autoplay=1&mute=1&enablejsapi=1&controls=0&loop=1&playsinline=1&color=white&rel=0&cc_load_policy=1&playlist=And-D95JXhQ"
+              allowfullscreen
+            ></iframe>
+            <div
+              id="overlay"
+              class="overlay position-absolute w-100 h-100 pointer-event opacity-3"
+            ></div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="slide-2 mySlides">
+          <div class="nav-slide2 position-absolute">
+            <ul>
+              <div class="slide2 active"></div>
+              <div class="slide2"></div>
+              <div class="slide2"></div>
+              <div class="slide2"></div>
+              <div class="slide2"></div>
+              <div class="slide2"></div>
+            </ul>
+          </div>
+          <div class="wrap-slide2 d-flex min-vh-100 min-vw-100">
+            <div class="item-slide2">
+              <img
+                src="https://www.eurotile.vn/pictures/catalog/banner/001-1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="item-slide2">
+              <img
+                src="https://www.eurotile.vn/pictures/catalog/banner/moc-lan-zoom.jpg"
+                alt=""
+              />
+            </div>
+            <div class="item-slide2">
+              <img
+                src="https://www.eurotile.vn/pictures/catalog/product/moclan/pc-moclan2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="item-slide2">
+              <img
+                src="https://www.eurotile.vn/pictures/catalog/banner/hoa-da-zoom.jpg"
+                alt=""
+              />
+            </div>
+            <div class="item-slide2">
+              <img
+                src="https://www.eurotile.vn/pictures/catalog/product/hoada/pc-hoada1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="item-slide2">
+              <img
+                src="https://www.eurotile.vn/pictures/catalog/banner/an-nien-zoom.jpg"
+                alt=""
+              />
+            </div>
+            <div class="item-slide2">
+              <img
+                src="https://www.eurotile.vn/pictures/catalog/product/annien/pc-An-nien1.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="slide-3 mySlides min-vh-100 min-vw-100">
+          <div class="wrapper-slide3 position-absolute vh-50 vw-50">
+            <div class="wrap-slide3 d-flex">
+              <div class="item-slide3">
+                <img
+                  src="https://www.eurotile.vn/pictures/catalog/background/bg-spmoi.jpg"
+                  alt=""
+                />
+                <div class="box-text">
+                  <div class="text">
+                    <div class="title-box">Sản phẩm mới</div>
+                    <h2><br /></h2>
+                    <p>
+                      Hạnh phúc là một hành trình chứ không phải điểm đến. Hãy
+                      sống thật tốt đẹp theo cách bạn muốn dù người khác có thể
+                      cho rằng nó viễn vông.
+                    </p>
+                    <a href="#"
+                      >Chi tiết <i class="bi bi-arrow-right-short"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="item-slide3">
+                <img
+                  src="https://www.eurotile.vn/pictures/catalog/product/vongcat/pc-vong-cat3.jpg"
+                  alt=""
+                />
+                <div class="box-text">
+                  <div class="text">
+                    <div class="title-box">Sản phẩm mới</div>
+                    <h2>Lavar Volcano <strong>Hoa Đá</strong></h2>
+                    <p>
+                      Sự kết tinh của trời đất ngàn năm, núi lửa tuôn trào,
+                      những dòng dung nham tuôn trào như ngày khai nhụy nở hoa,
+                      một bông hoa rực rỡ, mãnh liệt và vô cùng nóng bỏng...
+                    </p>
+                    <a href="#"
+                      >Chi tiết <i class="bi bi-arrow-right-short"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="item-slide3">
+                <img
+                  src="https://www.eurotile.vn/pictures/catalog/product/moclan/Moc-lan.jpg"
+                  alt=""
+                />
+                <div class="box-text">
+                  <div class="text">
+                    <div class="title-box">Sản phẩm mới</div>
+                    <h2>Switzerland wood <strong>Mộc Lan</strong></h2>
+                    <p>
+                      Mộc Lan, một loài hoa mang vẻ đẹp thuần khiết, mộc mạc
+                      tinh khôi, lãng mạn, quyến rũ nhưng vô cùng mạnh mẽ...
+                    </p>
+                    <a href="#"
+                      >Chi tiết <i class="bi bi-arrow-right-short"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nav-slide3 position-absolute">
+              <ul>
+                <div class="slide3 active"></div>
+                <div class="slide3"></div>
+                <div class="slide3"></div>
+              </ul>
+            </div>
+          </div>
+          <div class="bg position-relative">
+            <img
+              src="https://www.eurotile.vn/pictures/catalog/product/moclan/Moc-lan.jpg"
+              alt=""
+            />
+          </div>
+
+          <!-- <div class="item-slide3">
+            <img
+              src="https://www.eurotile.vn/pictures/catalog/background/bg-spmoi.jpg"
+              alt=""
+            />
+          </div>
+          <div class="item-slide3">
+            <img
+              src="https://www.eurotile.vn/pictures/catalog/product/hoada/pc-hoada2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="item-slide3">
+            <img
+              src="https://www.eurotile.vn/pictures/catalog/product/moclan/Moc-lan.jpg"
+              alt=""
+            />
+          </div> -->
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide-4 mySlides min-vh-100 min-vw-100">
+          <div class="wrapper-slide4 position-absolute vh-50 vw-50">
+            <div class="wrap-slide4 d-flex">
+              <div class="item-slide4">
+                <img
+                  src="https://www.eurotile.vn/pictures/catalog/background/bg-spmoi.jpg"
+                  alt=""
+                />
+                <div class="footer">
+                  
+                </div>
+              </div>
+              <div class="item-slide4">
+                <img
+                  src="https://www.eurotile.vn/pictures/catalog/product/moclan/Moc-lan.jpg"
+                  alt=""
+                />
+                <div class="footer">
+                  
+                </div>
+              </div>
+              <div class="item-slide4">
+                <img
+                  src="https://www.eurotile.vn/pictures/catalog/background/bg-spmoi.jpg"
+                  alt=""
+                />
+                <div class="footer">
+                  
+                </div>
+
+              </div>
+              <div class="item-slide4">
+                <img
+                  src="https://www.eurotile.vn/pictures/catalog/product/moclan/Moc-lan.jpg"
+                  alt=""
+                />
+                <div class="footer">
+                  
+                </div>
+              </div>
+              <div class="item-slide4">
+                <img
+                  src="https://www.eurotile.vn/pictures/catalog/background/bg-spmoi.jpg"
+                  alt=""
+                />
+                <div class="footer">
+                  
+                </div>
+              </div>
+              <div class="item-slide4">
+                <img
+                  src="https://www.eurotile.vn/pictures/catalog/product/moclan/Moc-lan.jpg"
+                  alt=""
+                />
+                <div class="footer">
+                  
+                </div>
+              </div>
+              <div class="item-slide4">
+                <img
+                  src="https://www.eurotile.vn/pictures/catalog/product/moclan/Moc-lan.jpg"
+                  alt=""
+                />
+                <div class="footer">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="nav-slide4 position-absolute">
+              <ul>
+                <div class="slide4 active"></div>
+                <div class="slide4"></div>
+                <div class="slide4"></div>
+                <div class="slide4"></div>
+                <div class="slide4"></div>
+                <div class="slide4"></div>
+              </ul>
+            </div>
+          </div>
+          <div class="bg position-relative">
+            <img
+              src="https://www.eurotile.vn/pictures/catalog/background/bg-duan.jpg"
+              alt=""
+            />
+          </div>
+
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="slide-5 mySlides min-vh-100 min-vw-100">
+          <div
+            id="overlay"
+            class="overlay position-absolute w-100 h-100 pointer-event opacity-3"
+          ></div>
+          <div class="content-news">
+            <div class="box-rotate">
+              <h1>Tin Mới</h1>
+            </div>
+            <div class="news-home">
+              <div class="left d-block">
+                <img
+                  src="https://www.eurotile.vn/pictures/catalog/xu-huong-2023/aeon-mail-ha-dong/Eurotile-AEON-MALL-ha-dong-8.jpg"
+                  alt=""
+                />
+                <div class="news-text-home">
+                  <h3>EUROTILE ĐỒNG HÀNH CÙNG DỰ ÁN AEON MALL HÀ ĐÔNG</h3>
+                  <p>
+                    Eurotile đã chinh phục được vị khách hàng Nhật Bản kỹ tính
+                    để đồng hành cùng dự án Aeon Mall Hà Đông, nhờ vào chất liệu
+                    gạch men cao cấp và thiết kế ấn tượng.
+                  </p>
+                </div>
+              </div>
+              <div class="right">
+                <div class="up">
+                  <img
+                  src="https://www.eurotile.vn/pictures/catalog/xu-huong-2023/aeon-mail-ha-dong/Eurotile-AEON-MALL-ha-dong-8.jpg"
+                  alt=""
+                />
+                  <div class="news-text-home">
+                    <h3>
+                      CHÍNH THỨC KHAI TRƯƠNG EUROTIE CENTER TP. HỒ CHÍ MINH VỚI
+                      TÊN GỌI "EUROTILE PROFESSIONAL"
+                    </h3>
+                    <p>
+                      Sáng 2/12, Lễ khai trương Eurotile Center TP. Hồ Chí Minh
+                      với tên gọi “Eurotile Professional” đã chính thức diễn ra
+                      tại số 270 Lý Thường Kiệt, Quận 10, TP.HCM. Đây là không
+                      gian trưng bày các dòng sản phẩm cao cấp, hiện đại thứ 9
+                      của Eurotile trên toàn quốc.
+                    </p>
+                  </div>
+                </div>
+                <div class="down ">
+                  <img
+                  src="https://www.eurotile.vn/pictures/catalog/xu-huong-2023/aeon-mail-ha-dong/Eurotile-AEON-MALL-ha-dong-8.jpg"
+                  alt=""
+                />
+                  <div class="news-text-home">
+                    <h3>
+                      GẠCH TRANG TRÍ THIRD-FIRING EUROTILE: NGHỆ THUẬT SẮP ĐẶT
+                      KHÔNG GIAN SỐNG
+                    </h3>
+                    <p>
+                      Áp dụng công nghệ nung 3 lần, Eurotile mang đến những sản
+                      phẩm gạch trang trí Third-firing với họa tiết nổi bật,
+                      hiệu ứng lấp lánh như những bức tranh nghệ thuật sinh
+                      động, tô điểm cho không gian sống thêm phần tinh tế và
+                      đẳng cấp.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg position-relative">
+            <img
+              src="https://www.eurotile.vn/pictures/catalog/background/bg-news.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- Slide 6 -->
+        <div class="slide-6 mySlides min-vh-100 min-vw-100">
+          <div class="content-contact d-flex">
+            <div class="left">
+              <h1>EUROTILE</h1>
+              <p>433 Cộng Hòa, P.15, Q.Tân Bình, TP.HCM</p>
+              <p>0902.798.538</p>
+              <p>tuvanthietke@eurotile.vn</p>
+            </div>
+            <div class="right">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.086927478105!2d106.63474751508019!3d10.804654092302416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175295a69b4b385%3A0xe0b01019b76919fc!2sEUROTILE%20CENTER%20S%C3%A0i%20G%C3%B2n!5e0!3m2!1svi!2s!4v1639112797670!5m2!1svi!2s"
+                width="500"
+                height="500"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="map"
+              ></iframe>
+            </div>
+          </div>
+          <div
+          id="overlay"
+          class="overlay position-absolute w-100 h-100 pointer-event opacity-3"
+        ></div> 
+          <div class="bg position-relative">
+            <img
+            src="https://www.eurotile.vn/pictures/catalog/banner/hoa-da-zoom.jpg"
+            alt=""
+          />
+          </div>
+ 
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer-slide position-absolute">
+      <div class="left d-flex ms-3 mb-3">
+        <div class="text">2018 Eurotile ALL RIGHT RESERVED.</div>
+        <div class="icon d-flex">
+          <div class="item"><i class="bi bi-facebook"></i></div>
+          <div class="item"><i class="bi bi-youtube"></i></div>
+          <div class="item"><i class="bi bi-instagram"></i></div>
+          <div class="item"><i class="bi bi-pinterest"></i></div>
+        </div>
+      </div>
+      <div class="right d-flex me-3 mb-3">
+        <div class="text d-flex justify-content-center align-items-center me-1">
+          <b>Site map</b>
+          <div class="border-end border-2 border-light h-50 ms-1 me-1"></div>
+          <b>hotline: 0902.798.538</b>
+        </div>
+        <div class="mail">
+          <a href="#"
+            ><div class="icon">
+              <i
+                class="bi bi-pen ps-1 pe-1"
+                style="
+                  font-size: 2rem;
+                  background-color: #2c6178;
+                  border-radius: 50%;
+                "
+              ></i
+              >tuvanthietke@eurotile.vn
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="SlideShowMain.js"></script>
+    <script type="text/javascript" src="SlideShowInside.js"></script>
+    <script type="text/javascript" src="StatusVideoChange.js"></script>
+    <script type="text/javascript" src="Responsive_home.js"></script>
+  </body>
+</html>
