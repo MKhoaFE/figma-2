@@ -175,12 +175,6 @@ body img {
 body .slide-1 {
   z-index: 999;
 }
-@media (max-width: 768px) {
-  body .slide-1 {
-    display: none;
-    position: relative;
-  }
-}
 body .slide-1 .video-background .bg {
   z-index: -1;
   position: absolute;
@@ -220,7 +214,6 @@ body .slide-1 .video iframe:hover {
 @media (max-width: 768px) {
   body .slide-2 {
     overflow: hidden;
-    position: relative;
   }
 }
 body .slide-2 img {
@@ -254,8 +247,8 @@ body .slide-2 .nav-slide2 {
 }
 @media (max-width: 768px) {
   body .slide-2 .nav-slide2 {
-    top: 0;
-    margin-top: 90%;
+    bottom: 0;
+    margin-bottom: -800px;
   }
 }
 body .slide-2 .nav-slide2 ul {
@@ -296,11 +289,6 @@ body .slide-2 .wrap-slide2 {
 @media (max-width: 768px) {
   body .slide-2 .wrap-slide2 {
     height: 20%;
-  }
-}
-@media (max-width: 768px) {
-  body .slide-3 {
-    position: relative;
   }
 }
 body .slide-3 .bg {
@@ -791,11 +779,6 @@ body .slide-5-extra .item p {
   line-height: 1.4;
   margin: 0 0 10px;
 }
-@media (max-width: 768px) {
-  body .slide-6 {
-    position: relative;
-  }
-}
 body .slide-6 .bg {
   z-index: 900;
 }
@@ -891,7 +874,6 @@ body .footer-slide .right .mail a:hover {
 }
 body .footer-extra {
   display: none;
-  position: relative;
   bottom: 0;
   margin-top: 2600px;
 }

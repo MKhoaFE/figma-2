@@ -161,7 +161,7 @@ body {
   .slide-1 {
     @media (max-width: 768px) {
       
-      position: relative;
+      
     }
     z-index: 999;
     .video-background {
@@ -212,7 +212,7 @@ body {
   .slide-2 {
     @media (max-width: 768px) {
       overflow: hidden;
-      position: relative;
+
     }
     img {
       object-fit: cover;
@@ -246,8 +246,8 @@ body {
       justify-content: center;
       align-items: center;
       @media (max-width: 768px) {
-        top: 0;
-        margin-top: 90%;
+        bottom: 0;
+        margin-bottom: -800px;
       }
       ul {
         display: flex;
@@ -292,7 +292,7 @@ body {
 
   .slide-3 {
     @media (max-width: 768px) {
-      position: relative;
+
     }
     .bg {
       z-index: 900;
@@ -775,7 +775,7 @@ body {
   }
   .slide-6 {
     @media (max-width: 768px) {
-      position: relative;
+
     }
     .bg {
       z-index: 900;
@@ -880,7 +880,7 @@ body {
 
   .footer-extra{
     display: none;
-    position: relative;
+
     bottom: 0;
     margin-top: 2600px;
     @media (max-width: 768px) {
